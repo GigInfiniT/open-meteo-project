@@ -142,14 +142,14 @@ This project includes the following features:
 | Component           | Tool / Library           |
 | ------------------- | ------------------------ |
 | Language            | Python 3.10              |
-| API Requests        | `requests`               |
-| Data Processing     | `pandas`                 |
+| API Requests        |  requests                |
+| Data Processing     |  pandas                  |
 | Database            | PostgreSQL               |
 | DB Access           | SQLAlchemy + psycopg2    |
 | Validation          | Custom validation layer  |
 | Workflow Automation | Apache Airflow           |
 | Testing             | pytest                   |
-| Configuration       | `.env` + `python-dotenv` |
+| Configuration       | .env + python-dotenv     |
 | Logging             | Python logging module    |
 | Schema Design       | SQL star schema          |
 
@@ -235,10 +235,10 @@ The default location configured for this project is:
 
 The pipeline extracts the following daily weather fields:
 
-* `temperature_2m_max`
-* `temperature_2m_min`
-* `precipitation_sum`
-* `wind_speed_10m_max`
+*  temperature_2m_max
+*  temperature_2m_min
+*  precipitation_sum
+*  wind_speed_10m_max
 
 ---
 
@@ -256,9 +256,9 @@ The ETL workflow transforms data **before** loading it into the warehouse.
 4. Clean, validate, and transform the data
 5. Split transformed data into:
 
-   * `dim_date`
-   * `dim_location`
-   * `fact_weather`
+   *  dim_date
+   *  dim_location
+   *  fact_weather
 6. Load the tables into PostgreSQL
 
 ---
@@ -270,7 +270,7 @@ The ELT workflow loads raw API responses first, then transforms them later.
 ### ELT Flow
 
 1. Extract weather data from the API
-2. Load raw JSON payload into `stg_weather_raw`
+2. Load raw JSON payload into stg_weather_raw
 3. Retrieve unprocessed staging records
 4. Transform raw payloads into star-schema tables
 5. Load transformed tables into PostgreSQL
@@ -286,16 +286,16 @@ The warehouse uses a **star schema** for weather analytics.
 
 ## Staging Table
 
-### `stg_weather_raw`
+###  stg_weather_raw
 
 Stores raw API payloads before transformation.
 
 | Column                 | Description                                             |
 | ---------------------- | ------------------------------------------------------- |
-| `staging_id`           | Surrogate key for staged API payload                    |
-| `raw_payload`          | Raw API response stored as JSONB                        |
-| `extraction_timestamp` | Time the raw payload was inserted                       |
-| `processed`            | Boolean flag showing whether ELT processing is complete |
+|  staging_id            | Surrogate key for staged API payload                    |
+|  raw_payload           | Raw API response stored as JSONB                        |
+|  extraction_timestamp  | Time the raw payload was inserted                       |
+|  processed             | Boolean flag showing whether ELT processing is complete |
 
 This table supports:
 
@@ -307,57 +307,57 @@ This table supports:
 
 ## Dimension Tables
 
-## `dim_date`
+##  dim_date
 
 Stores reusable calendar/date attributes.
 
 | Column        | Description                           |
 | ------------- | ------------------------------------- |
-| `date_key`    | Integer date key in `YYYYMMDD` format |
-| `date`        | Actual calendar date                  |
-| `year`        | Year                                  |
-| `month`       | Month                                 |
-| `day`         | Day                                   |
-| `day_of_week` | Day name                              |
+|  date_key     | Integer date key in  YYYYMMDD  format |
+|  date         | Actual calendar date                  |
+|  year         | Year                                  |
+|  month        | Month                                 |
+|  day          | Day                                   |
+|  day_of_week  | Day name                              |
 
 ---
 
-## `dim_location`
+##  dim_location
 
 Stores descriptive location attributes.
 
 | Column          | Description                |
 | --------------- | -------------------------- |
-| `location_key`  | Surrogate location key     |
-| `location_name` | Standardized location name |
-| `latitude`      | Latitude                   |
-| `longitude`     | Longitude                  |
+|  location_key   | Surrogate location key     |
+|  location_name  | Standardized location name |
+|  latitude       | Latitude                   |
+|  longitude      | Longitude                  |
 
 ---
 
 ## Fact Table
 
-## `fact_weather`
+##  fact_weather 
 
 Stores quantitative weather measurements.
 
 | Column               | Description                         |
 | -------------------- | ----------------------------------- |
-| `weather_id`         | Surrogate fact key                  |
-| `date_key`           | FK to `dim_date`                    |
-| `location_key`       | FK to `dim_location`                |
-| `temperature_2m_max` | Maximum daily temperature           |
-| `temperature_2m_min` | Minimum daily temperature           |
-| `precipitation_sum`  | Total daily precipitation           |
-| `wind_speed_10m_max` | Maximum daily wind speed            |
-| `temp_range`         | Derived field = max temp - min temp |
-| `load_timestamp`     | ETL/ELT load timestamp              |
+|  weather_id          | Surrogate fact key                  |
+|  date_key            | FK to  dim_date                     |
+|  location_key        | FK to dim_location                  |
+|  temperature_2m_max  | Maximum daily temperature           |
+|  temperature_2m_min  | Minimum daily temperature           |
+|  precipitation_sum   | Total daily precipitation           |
+|  wind_speed_10m_max  | Maximum daily wind speed            |
+|  temp_range          | Derived field = max temp - min temp |
+|  load_timestamp      | ETL/ELT load timestamp              |
 
 ### Uniqueness rule
 
 A unique constraint prevents duplicate weather records for the same location and date:
 
-* `uq_weather_day_location (date_key, location_key)`
+*  uq_weather_day_location (date_key, location_key)
 
 This makes the fact table idempotent and safe for repeated loads.
 
@@ -365,7 +365,7 @@ This makes the fact table idempotent and safe for repeated loads.
 
 # Data Validation Rules
 
-The project includes a dedicated validation layer in `src/validation/validator.py`.
+The project includes a dedicated validation layer in  src/validation/validator.py.
 
 ## Validation checks implemented
 
@@ -389,29 +389,29 @@ The project includes a dedicated validation layer in `src/validation/validator.p
 
 The project validates the presence of:
 
-* `time`
-* `temperature_2m_max`
-* `temperature_2m_min`
-* `precipitation_sum`
-* `wind_speed_10m_max`
+*  time
+*  temperature_2m_max
+*  temperature_2m_min
+*  precipitation_sum
+*  wind_speed_10m_max
 
 ---
 
 # How the ETL Pipeline Works
 
-The ETL pipeline is orchestrated by the `ETLPipeline` class.
+The ETL pipeline is orchestrated by the ETLPipeline class.
 
 ## ETL components
 
-* **Extractor:** `src/extract/api_extractor.py`
-* **Transformer:** `src/transform/transformer.py`
-* **Loader:** `src/load/db_loader.py`
-* **Pipeline orchestration:** `src/pipeline/weather_etl_pipeline.py`
+* **Extractor:** src/extract/api_extractor.py
+* **Transformer:** src/transform/transformer.py
+* **Loader:** src/load/db_loader.py
+* **Pipeline orchestration:** src/pipeline/weather_etl_pipeline.py
 
 ## ETL execution steps
 
-1. `WeatherExtractor.get_weather_data()` fetches the weather data from Open-Meteo
-2. `WeatherTransformer.transform()`:
+1. WeatherExtractor.get_weather_data() fetches the weather data from Open-Meteo
+2. WeatherTransformer.transform():
 
    * creates a DataFrame
    * cleans column names
@@ -419,11 +419,11 @@ The ETL pipeline is orchestrated by the `ETLPipeline` class.
    * validates the dataset
    * creates derived fields
    * prepares star-schema tables
-3. `WeatherLoader.load()` loads:
+3. WeatherLoader.load() loads:
 
-   * `dim_date`
-   * `dim_location`
-   * `fact_weather`
+   * dim_date
+   * dim_location
+   * fact_weather
 
 ## Run entry point
 
@@ -435,20 +435,20 @@ python main_etl.py
 
 # How the ELT Pipeline Works
 
-The ELT pipeline is orchestrated by the `ELTPipeline` class.
+The ELT pipeline is orchestrated by the ELTPipeline class.
 
 ## ELT components
 
-* **Extractor:** `src/extract/api_extractor.py`
-* **Staging loader:** `src/elt/staging_loader.py`
-* **ELT transformer:** `src/elt/elt_transformer.py`
-* **Warehouse loader:** `src/load/db_loader.py`
-* **Pipeline orchestration:** `src/pipeline/weather_elt_pipeline.py`
+* **Extractor:** src/extract/api_extractor.py
+* **Staging loader:** src/elt/staging_loader.py
+* **ELT transformer:** src/elt/elt_transformer.py
+* **Warehouse loader:** src/load/db_loader.py
+* **Pipeline orchestration:** src/pipeline/weather_elt_pipeline.py
 
 ## ELT execution steps
 
 1. Extract weather data from API
-2. Insert raw payload into `stg_weather_raw`
+2. Insert raw payload into stg_weather_raw
 3. Retrieve rows where `processed = FALSE`
 4. Transform each raw payload using the same transformation logic used in ETL
 5. Load transformed dimension and fact tables
@@ -468,8 +468,8 @@ The project includes Airflow DAGs for **both ETL and ELT pipelines**.
 
 ## DAGs included in this repository
 
-* `dags/weather_etl_pipeline.py`
-* `dags/weather_elt_pipeline.py`
+* dags/weather_etl_pipeline.py
+* dags/weather_elt_pipeline.py
 
 ## Important note about Airflow deployment
 
@@ -490,13 +490,13 @@ The copies stored in this project repository are included for:
 
 ## ETL Airflow DAG
 
-**DAG ID:** `weather_etl_pipeline`
+**DAG ID:** weather_etl_pipeline
 
 ### Tasks
 
-1. `extract_task`
-2. `transform_task`
-3. `load_task`
+1. extract_task
+2. transform_task
+3. load_task
 
 ### ETL DAG dependency flow
 
@@ -508,14 +508,14 @@ extract_task >> transform_task >> load_task
 
 ## ELT Airflow DAG
 
-**DAG ID:** `weather_elt_pipeline`
+**DAG ID:** weather_elt_pipeline
 
 ### Tasks
 
-1. `extract_to_staging_task`
-2. `transform_staging_task`
-3. `load_warehouse_task`
-4. `mark_processed_task`
+1. extract_to_staging_task
+2. transform_staging_task
+3. load_warehouse_task
+4. mark_processed_task
 
 ### ELT DAG dependency flow
 
@@ -556,9 +556,9 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 4. Create a `.env` file
+## 4. Create a .env file
 
-Create a `.env` file in the project root using the structure below:
+Create a .env file in the project root using the structure below:
 
 ```env
 API_BASE_URL=https://api.open-meteo.com/v1/forecast
@@ -571,7 +571,7 @@ DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=weather_db
 DB_USER=postgres
-DB_PASSWORD=
+DB_PASSWORD=<your_db_password>
 
 WEATHER_FIELDS=temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max
 ```
@@ -671,19 +671,19 @@ docs/images/
 
 ## Database output screenshots
 
-### `dim_date`
+### dim_date
 
 ![dim\_date](docs/images/dim_date.png)
 
-### `dim_location`
+### dim_location
 
 ![dim\_location](docs/images/dim_location.png)
 
-### `fact_weather`
+### fact_weather
 
 ![fact\_weather](docs/images/fact_table.png)
 
-### `stg_weather_raw`
+### stg_weather_raw
 
 ![stg\_weather\_raw](docs/images/stg_weather_raw.png)
 
@@ -713,9 +713,9 @@ docs/images/
 
 ## 1. Date dimension sample
 
-A sample of the `dim_date` table was captured in:
+A sample of the dim_date table was captured in:
 
-* `docs/images/dim_date.png`
+* docs/images/dim_date.png
 
 This table stores the date key and reusable date attributes for analytics.
 
@@ -723,9 +723,9 @@ This table stores the date key and reusable date attributes for analytics.
 
 ## 2. Location dimension sample
 
-A sample of the `dim_location` table was captured in:
+A sample of the dim_location table was captured in:
 
-* `docs/images/dim_location.png`
+* docs/images/dim_location.png
 
 This table stores location metadata for the weather fact table.
 
@@ -733,11 +733,11 @@ This table stores location metadata for the weather fact table.
 
 ## 3. Weather fact table sample
 
-A sample of the `fact_weather` table was captured in:
+A sample of the fact_weather table was captured in:
 
-* `docs/images/fact_table.png`
+* docs/images/fact_table.png
 
-This table contains the analytical weather metrics and the derived `temp_range` field.
+This table contains the analytical weather metrics and the derived temp_range field.
 
 ---
 
@@ -745,8 +745,8 @@ This table contains the analytical weather metrics and the derived `temp_range` 
 
 A sample of the raw staging payload was captured in:
 
-* `docs/images/stg_weather_raw.png`
-* `docs/images/staging_raw_payload_output.png`
+* docs/images/stg_weather_raw.png
+* docs/images/staging_raw_payload_output.png
 
 These screenshots demonstrate the ELT staging layer storing raw API JSON before transformation.
 
@@ -754,10 +754,10 @@ These screenshots demonstrate the ELT staging layer storing raw API JSON before 
 
 ## 5. Star schema join sample
 
-A join query across `fact_weather`, `dim_date`, and `dim_location` was captured in:
+A join query across fact_weather, dim_date, and dim_location was captured in:
 
-* `docs/images/star_schema_join_query.png`
-* `docs/images/star_schema_join_output.png`
+* docs/images/star_schema_join_query.png
+* docs/images/star_schema_join_output.png
 
 This demonstrates how the star schema supports analytical querying.
 
@@ -782,7 +782,7 @@ The ELT pipeline reuses the same transformation logic used by the ETL pipeline. 
 
 ## 3. Staging layer for raw API auditability
 
-The `stg_weather_raw` table allows:
+The stg_weather_raw table allows:
 
 * raw payload retention
 * reprocessing without another API call
@@ -798,7 +798,7 @@ The star schema was chosen because it is simple, maintainable, and well suited f
 
 ## 5. Idempotent warehouse loading
 
-The fact table uses a unique constraint on `(date_key, location_key)` with an upsert strategy to avoid duplicate analytical records across repeated runs.
+The fact table uses a unique constraint on (date_key, location_key) with an upsert strategy to avoid duplicate analytical records across repeated runs.
 
 ---
 
@@ -839,12 +839,12 @@ The project includes **pytest-based unit and integration tests**.
 
 ## Test files included
 
-* `tests/test_extractor.py`
-* `tests/test_loader.py`
-* `tests/test_pipeline_integration.py`
-* `tests/test_staging_loader.py`
-* `tests/test_transformer.py`
-* `tests/test_validator.py`
+* tests/test_extractor.py
+* tests/test_loader.py
+* tests/test_pipeline_integration.py
+* tests/test_staging_loader.py
+* tests/test_transformer.py
+* tests/test_validator.py
 
 ## Areas tested
 
@@ -951,5 +951,5 @@ It serves as a practical capstone implementation of core data engineering concep
 
 ## Author
 
-**Ugochukwu Obenwa**
+**Ugochukwu Obenwa**  
 AICA Data Engineering Capstone Project
