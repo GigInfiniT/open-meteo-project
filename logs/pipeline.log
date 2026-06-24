@@ -1,0 +1,543 @@
+2026-06-12 11:44:01,625 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-12 11:44:06,555 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-12 11:49:26,309 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-12 11:49:28,182 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-12 11:53:17,606 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-12 11:53:27,658 - src.utils.logger - ERROR - API connection failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=9.0765&longitude=7.3986&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwind_speed_10m_max&timezone=auto (Caused by NameResolutionError("HTTPSConnection(host='api.open-meteo.com', port=443): Failed to resolve 'api.open-meteo.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-06-12 11:54:17,809 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-12 11:54:19,558 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-12 13:32:49,227 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-12 13:32:55,358 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-13 12:03:29,901 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-13 12:03:37,767 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-13 18:44:48,969 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-13 18:44:53,350 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-13 18:44:53,354 - src.utils.logger - INFO - Starting transformation process
+2026-06-13 18:44:53,355 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-13 18:44:53,383 - src.utils.logger - INFO - Initial record count: 7
+2026-06-13 18:44:53,708 - src.utils.logger - INFO - Final record count: 7
+2026-06-13 18:44:53,708 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-13 18:46:47,688 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-13 18:46:50,192 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-13 18:46:50,193 - src.utils.logger - INFO - Starting transformation process
+2026-06-13 18:46:50,194 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-13 18:46:50,194 - src.utils.logger - INFO - Initial record count: 7
+2026-06-13 18:46:50,210 - src.utils.logger - INFO - Final record count: 7
+2026-06-13 18:46:50,211 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-14 22:45:53,744 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-14 22:46:00,342 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-14 22:46:00,345 - src.utils.logger - INFO - Starting transformation process
+2026-06-14 22:46:00,346 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-14 22:46:00,418 - src.utils.logger - INFO - Initial record count: 7
+2026-06-14 22:46:00,735 - src.utils.logger - INFO - Final record count: 7
+2026-06-14 22:46:00,735 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-14 22:47:50,114 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-14 22:47:55,312 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-14 22:47:55,313 - src.utils.logger - INFO - Starting transformation process
+2026-06-14 22:47:55,313 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-14 22:47:55,314 - src.utils.logger - INFO - Initial record count: 7
+2026-06-14 22:47:55,326 - src.utils.logger - INFO - Final record count: 7
+2026-06-14 22:47:55,326 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-15 11:02:45,130 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-15 11:02:49,359 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-15 11:02:49,382 - src.utils.logger - INFO - Starting transformation process
+2026-06-15 11:02:49,384 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-15 11:02:49,390 - src.utils.logger - INFO - Initial record count: 7
+2026-06-15 11:02:49,871 - src.utils.logger - INFO - Final record count: 7
+2026-06-15 11:02:49,872 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-15 11:02:49,958 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-15 11:02:49,958 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-15 11:02:49,959 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-15 11:02:49,959 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-16 16:14:44,029 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-16 16:14:51,330 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-16 16:14:51,331 - src.utils.logger - INFO - Starting transformation process
+2026-06-16 16:14:51,331 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-16 16:14:51,557 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-16 16:14:52,165 - src.utils.logger - INFO - Final record count: 7
+2026-06-16 16:14:52,165 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-16 16:14:52,265 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-16 16:14:52,265 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-16 16:14:52,265 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-16 16:14:52,266 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-16 16:19:21,905 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-16 16:19:28,976 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-16 16:19:28,979 - src.utils.logger - INFO - Starting transformation process
+2026-06-16 16:19:28,980 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-16 16:19:28,983 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-16 16:19:29,001 - src.utils.logger - INFO - Final record count: 7
+2026-06-16 16:19:29,001 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-16 16:19:29,005 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-16 16:19:29,005 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-16 16:19:29,007 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-16 16:19:29,008 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-16 16:19:29,009 - src.utils.logger - INFO - Starting database load
+2026-06-16 16:19:29,009 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-16 16:19:29,504 - src.utils.logger - INFO - Processed 7 dim_date rows
+2026-06-16 16:19:29,505 - src.utils.logger - INFO - Loading dim_location table
+2026-06-16 16:19:29,695 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-16 16:19:29,695 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-16 16:19:29,718 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-16 16:19:29,966 - src.utils.logger - INFO - Processed 7 fact_weather rows
+2026-06-16 16:19:29,966 - src.utils.logger - INFO - Database load completed successfully
+2026-06-16 16:37:50,153 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-16 16:37:53,611 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-16 16:37:53,613 - src.utils.logger - INFO - Starting transformation process
+2026-06-16 16:37:53,613 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-16 16:37:53,667 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-16 16:37:53,742 - src.utils.logger - INFO - Final record count: 7
+2026-06-16 16:37:53,743 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-16 16:37:53,780 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-16 16:37:53,780 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-16 16:37:53,780 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-16 16:37:53,780 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-16 16:37:53,781 - src.utils.logger - INFO - Starting database load
+2026-06-16 16:37:53,781 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-16 16:37:53,912 - src.utils.logger - INFO - Processed 7 dim_date rows
+2026-06-16 16:37:53,912 - src.utils.logger - INFO - Loading dim_location table
+2026-06-16 16:37:53,982 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-16 16:37:53,982 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-16 16:37:53,993 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-16 16:37:54,219 - src.utils.logger - INFO - Processed 7 fact_weather rows
+2026-06-16 16:37:54,220 - src.utils.logger - INFO - Database load completed successfully
+2026-06-17 14:26:35,530 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-17 14:26:42,368 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-17 14:26:42,370 - src.utils.logger - INFO - Starting transformation process
+2026-06-17 14:26:42,370 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-17 14:26:42,667 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-17 14:26:43,160 - src.utils.logger - INFO - Final record count: 7
+2026-06-17 14:26:43,160 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-17 14:26:43,181 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-17 14:26:43,182 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-17 14:26:43,182 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-17 14:26:43,182 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-17 14:26:43,182 - src.utils.logger - INFO - Starting database load
+2026-06-17 14:26:43,182 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-17 14:26:46,927 - src.utils.logger - INFO - Processed 7 dim_date rows
+2026-06-17 14:26:46,928 - src.utils.logger - INFO - Loading dim_location table
+2026-06-17 14:26:47,098 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-17 14:26:47,099 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-17 14:26:47,165 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-17 14:26:47,270 - src.utils.logger - INFO - Processed 7 fact_weather rows
+2026-06-17 14:26:47,270 - src.utils.logger - INFO - Database load completed successfully
+2026-06-17 14:34:56,962 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-17 14:34:58,578 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-17 14:34:58,580 - src.utils.logger - INFO - Starting transformation process
+2026-06-17 14:34:58,581 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-17 14:34:58,582 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-17 14:34:58,607 - src.utils.logger - INFO - Final record count: 7
+2026-06-17 14:34:58,607 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-17 14:34:58,611 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-17 14:34:58,611 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-17 14:34:58,611 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-17 14:34:58,611 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-17 14:34:58,612 - src.utils.logger - INFO - Starting database load
+2026-06-17 14:34:58,612 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-17 14:34:58,644 - src.utils.logger - INFO - Processed 7 dim_date rows
+2026-06-17 14:34:58,644 - src.utils.logger - INFO - Loading dim_location table
+2026-06-17 14:34:58,707 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-17 14:34:58,708 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-17 14:34:58,711 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-17 14:34:58,795 - src.utils.logger - INFO - Processed 7 fact_weather rows
+2026-06-17 14:34:58,795 - src.utils.logger - INFO - Database load completed successfully
+2026-06-17 18:30:00,167 - src.utils.logger - INFO - Loading raw payload into staging table
+2026-06-17 18:30:01,321 - src.utils.logger - INFO - Raw payload loaded successfully
+2026-06-17 18:44:38,961 - src.utils.logger - INFO - Loading raw payload into staging table
+2026-06-17 18:44:39,114 - src.utils.logger - INFO - Raw payload loaded successfully
+2026-06-17 19:03:09,059 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-17 19:03:12,226 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-17 19:03:12,305 - src.utils.logger - INFO - Starting transformation process
+2026-06-17 19:03:12,306 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-17 19:03:12,615 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-17 19:03:14,015 - src.utils.logger - INFO - Final record count: 7
+2026-06-17 19:03:14,016 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-17 19:03:14,061 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-17 19:03:14,061 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-17 19:03:14,062 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-17 19:03:14,062 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-17 19:03:14,062 - src.utils.logger - INFO - Starting database load
+2026-06-17 19:03:14,062 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-17 19:03:14,586 - src.utils.logger - INFO - Processed 7 dim_date rows
+2026-06-17 19:03:14,586 - src.utils.logger - INFO - Loading dim_location table
+2026-06-17 19:03:14,778 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-17 19:03:14,779 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-17 19:03:14,920 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-17 19:03:15,116 - src.utils.logger - INFO - Processed 7 fact_weather rows
+2026-06-17 19:03:15,116 - src.utils.logger - INFO - Database load completed successfully
+2026-06-17 21:25:37,907 - src.utils.logger - INFO - Starting ELT pipeline
+2026-06-17 21:25:37,960 - src.utils.logger - INFO - Starting extraction phase
+2026-06-17 21:25:37,961 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-17 21:25:45,961 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-17 21:25:45,967 - src.utils.logger - INFO - Loading raw payload into staging table
+2026-06-17 21:25:48,717 - src.utils.logger - INFO - Raw payload loaded successfully
+2026-06-17 21:25:48,717 - src.utils.logger - INFO - Extraction phase completed
+2026-06-17 21:25:48,718 - src.utils.logger - INFO - Starting transformation phase
+2026-06-17 21:25:48,719 - src.utils.logger - INFO - Retrieving unprocessed staging records
+2026-06-17 21:25:50,503 - src.utils.logger - INFO - Transforming 1 staging record(s)
+2026-06-17 21:25:50,589 - src.utils.logger - INFO - Starting transformation process
+2026-06-17 21:25:50,590 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-17 21:25:50,595 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-17 21:25:50,870 - src.utils.logger - INFO - Final record count: 7
+2026-06-17 21:25:50,872 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-17 21:25:50,905 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-17 21:25:50,906 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-17 21:25:50,906 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-17 21:25:50,907 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-17 21:25:51,300 - src.utils.logger - INFO - Generated 7 dim_date rows
+2026-06-17 21:25:51,301 - src.utils.logger - INFO - Generated 1 dim_location rows
+2026-06-17 21:25:51,301 - src.utils.logger - INFO - Generated 7 fact_weather rows
+2026-06-17 21:25:51,301 - src.utils.logger - INFO - Transformation phase completed
+2026-06-17 21:25:51,301 - src.utils.logger - INFO - Starting load phase
+2026-06-17 21:25:51,301 - src.utils.logger - INFO - Starting database load
+2026-06-17 21:25:51,301 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-17 21:25:51,530 - src.utils.logger - INFO - Processed 7 dim_date rows
+2026-06-17 21:25:51,531 - src.utils.logger - INFO - Loading dim_location table
+2026-06-17 21:25:51,630 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-17 21:25:51,631 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-17 21:25:51,648 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-17 21:25:51,788 - src.utils.logger - INFO - Processed 7 fact_weather rows
+2026-06-17 21:25:51,788 - src.utils.logger - INFO - Database load completed successfully
+2026-06-17 21:25:51,789 - src.utils.logger - INFO - Load phase completed
+2026-06-17 21:25:51,789 - src.utils.logger - INFO - Starting staging update phase
+2026-06-17 21:25:51,789 - src.utils.logger - INFO - Marking 1 staging records as processed
+2026-06-17 21:25:52,146 - src.utils.logger - INFO - Staging update phase completed
+2026-06-17 21:25:52,147 - src.utils.logger - INFO - ELT pipeline completed successfully
+2026-06-18 12:44:02,217 - src.utils.logger - INFO - Starting ELT pipeline
+2026-06-18 12:44:02,251 - src.utils.logger - INFO - Starting extraction phase
+2026-06-18 12:44:02,252 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-18 12:44:05,519 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-18 12:44:05,522 - src.utils.logger - INFO - Loading raw payload into staging table
+2026-06-18 12:44:05,730 - src.utils.logger - ERROR - Failed loading raw payload: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-18 12:44:05,730 - src.utils.logger - CRITICAL - ELT pipeline failed: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-18 13:02:32,949 - src.utils.logger - INFO - Starting ELT pipeline
+2026-06-18 13:02:32,950 - src.utils.logger - INFO - Starting extraction phase
+2026-06-18 13:02:32,950 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-18 13:02:35,800 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-18 13:02:35,801 - src.utils.logger - INFO - Loading raw payload into staging table
+2026-06-18 13:02:37,041 - src.utils.logger - INFO - Raw payload loaded successfully
+2026-06-18 13:02:37,041 - src.utils.logger - INFO - Extraction phase completed
+2026-06-18 13:02:37,042 - src.utils.logger - INFO - Starting transformation phase
+2026-06-18 13:02:37,042 - src.utils.logger - INFO - Retrieving unprocessed staging records
+2026-06-18 13:02:37,713 - src.utils.logger - INFO - Transforming 1 staging record(s)
+2026-06-18 13:02:37,716 - src.utils.logger - INFO - Starting transformation process
+2026-06-18 13:02:37,717 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-18 13:02:37,726 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-18 13:02:38,006 - src.utils.logger - INFO - Final record count: 7
+2026-06-18 13:02:38,006 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-18 13:02:38,030 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-18 13:02:38,031 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-18 13:02:38,031 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-18 13:02:38,031 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-18 13:02:38,033 - src.utils.logger - INFO - Generated 7 dim_date rows
+2026-06-18 13:02:38,033 - src.utils.logger - INFO - Generated 1 dim_location rows
+2026-06-18 13:02:38,033 - src.utils.logger - INFO - Generated 7 fact_weather rows
+2026-06-18 13:02:38,034 - src.utils.logger - INFO - Transformation phase completed
+2026-06-18 13:02:38,034 - src.utils.logger - INFO - Starting load phase
+2026-06-18 13:02:38,034 - src.utils.logger - INFO - Starting database load
+2026-06-18 13:02:38,034 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-18 13:02:38,272 - src.utils.logger - INFO - Processed 7 dim_date rows
+2026-06-18 13:02:38,272 - src.utils.logger - INFO - Loading dim_location table
+2026-06-18 13:02:38,462 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-18 13:02:38,462 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-18 13:02:38,509 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-18 13:02:38,955 - src.utils.logger - INFO - Processed 7 fact_weather rows
+2026-06-18 13:02:38,955 - src.utils.logger - INFO - Database load completed successfully
+2026-06-18 13:02:38,956 - src.utils.logger - INFO - Load phase completed
+2026-06-18 13:02:38,956 - src.utils.logger - INFO - Starting staging update phase
+2026-06-18 13:02:38,957 - src.utils.logger - INFO - Marking 1 staging records as processed
+2026-06-18 13:02:38,989 - src.utils.logger - INFO - Staging update phase completed
+2026-06-18 13:02:38,990 - src.utils.logger - INFO - ELT pipeline completed successfully
+2026-06-18 13:12:41,234 - src.utils.logger - INFO - Starting ELT pipeline
+2026-06-18 13:12:41,234 - src.utils.logger - INFO - Starting extraction phase
+2026-06-18 13:12:41,234 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-18 13:12:45,073 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-18 13:12:45,074 - src.utils.logger - INFO - Loading raw payload into staging table
+2026-06-18 13:12:45,247 - src.utils.logger - INFO - Raw payload loaded successfully
+2026-06-18 13:12:45,247 - src.utils.logger - INFO - Extraction phase completed
+2026-06-18 13:12:45,247 - src.utils.logger - INFO - Starting transformation phase
+2026-06-18 13:12:45,248 - src.utils.logger - INFO - Retrieving unprocessed staging records
+2026-06-18 13:12:45,297 - src.utils.logger - INFO - Transforming 1 staging record(s)
+2026-06-18 13:12:45,298 - src.utils.logger - INFO - Starting transformation process
+2026-06-18 13:12:45,298 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-18 13:12:45,299 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-18 13:12:45,327 - src.utils.logger - INFO - Final record count: 7
+2026-06-18 13:12:45,327 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-18 13:12:45,333 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-18 13:12:45,333 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-18 13:12:45,333 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-18 13:12:45,333 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-18 13:12:45,337 - src.utils.logger - INFO - Generated 7 dim_date rows
+2026-06-18 13:12:45,337 - src.utils.logger - INFO - Generated 1 dim_location rows
+2026-06-18 13:12:45,337 - src.utils.logger - INFO - Generated 7 fact_weather rows
+2026-06-18 13:12:45,337 - src.utils.logger - INFO - Transformation phase completed
+2026-06-18 13:12:45,337 - src.utils.logger - INFO - Starting load phase
+2026-06-18 13:12:45,338 - src.utils.logger - INFO - Starting database load
+2026-06-18 13:12:45,338 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-18 13:12:45,507 - src.utils.logger - INFO - Processed 7 dim_date rows
+2026-06-18 13:12:45,507 - src.utils.logger - INFO - Loading dim_location table
+2026-06-18 13:12:45,612 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-18 13:12:45,613 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-18 13:12:45,629 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-18 13:12:45,729 - src.utils.logger - INFO - Processed 7 fact_weather rows
+2026-06-18 13:12:45,729 - src.utils.logger - INFO - Database load completed successfully
+2026-06-18 13:12:45,729 - src.utils.logger - INFO - Load phase completed
+2026-06-18 13:12:45,729 - src.utils.logger - INFO - Starting staging update phase
+2026-06-18 13:12:45,730 - src.utils.logger - INFO - Marking 1 staging records as processed
+2026-06-18 13:12:45,765 - src.utils.logger - INFO - Staging update phase completed
+2026-06-18 13:12:45,765 - src.utils.logger - INFO - ELT pipeline completed successfully
+2026-06-18 13:17:06,709 - src.utils.logger - INFO - Starting ETL pipeline
+2026-06-18 13:17:06,709 - src.utils.logger - INFO - Starting extraction phase
+2026-06-18 13:17:06,709 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-18 13:17:08,130 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-18 13:17:08,132 - src.utils.logger - INFO - Extraction phase completed
+2026-06-18 13:17:08,134 - src.utils.logger - INFO - Starting transformation phase
+2026-06-18 13:17:08,134 - src.utils.logger - INFO - Starting transformation process
+2026-06-18 13:17:08,134 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-18 13:17:08,138 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-18 13:17:08,168 - src.utils.logger - INFO - Final record count: 7
+2026-06-18 13:17:08,168 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-18 13:17:08,177 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-18 13:17:08,177 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-18 13:17:08,178 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-18 13:17:08,178 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-18 13:17:08,178 - src.utils.logger - INFO - Transformation phase completed
+2026-06-18 13:17:08,178 - src.utils.logger - INFO - Starting load phase
+2026-06-18 13:17:08,178 - src.utils.logger - INFO - Starting database load
+2026-06-18 13:17:08,178 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-18 13:17:08,394 - src.utils.logger - INFO - Processed 7 dim_date rows
+2026-06-18 13:17:08,394 - src.utils.logger - INFO - Loading dim_location table
+2026-06-18 13:17:08,498 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-18 13:17:08,499 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-18 13:17:08,513 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-18 13:17:08,577 - src.utils.logger - INFO - Processed 7 fact_weather rows
+2026-06-18 13:17:08,578 - src.utils.logger - INFO - Database load completed successfully
+2026-06-18 13:17:08,578 - src.utils.logger - INFO - Load phase completed
+2026-06-18 13:17:08,578 - src.utils.logger - INFO - ETL pipeline completed successfully
+2026-06-18 20:51:30,746 - src.utils.logger - INFO - Starting ELT pipeline
+2026-06-18 20:51:30,937 - src.utils.logger - INFO - Starting extraction phase
+2026-06-18 20:51:30,938 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-18 20:52:14,732 - src.utils.logger - ERROR - API request timed out: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=30)
+2026-06-18 20:52:14,733 - src.utils.logger - CRITICAL - ELT pipeline failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=30)
+2026-06-23 00:58:10,990 - src.utils.logger - INFO - Starting ELT pipeline
+2026-06-23 00:58:11,006 - src.utils.logger - INFO - Starting extraction phase
+2026-06-23 00:58:11,007 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-23 00:58:16,684 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-23 00:58:16,687 - src.utils.logger - INFO - Loading raw payload into staging table
+2026-06-23 00:58:18,854 - src.utils.logger - INFO - Raw payload loaded successfully
+2026-06-23 00:58:18,855 - src.utils.logger - INFO - Extraction phase completed
+2026-06-23 00:58:18,856 - src.utils.logger - INFO - Starting transformation phase
+2026-06-23 00:58:18,856 - src.utils.logger - INFO - Retrieving unprocessed staging records
+2026-06-23 00:58:20,065 - src.utils.logger - INFO - Transforming 3 staging record(s)
+2026-06-23 00:58:20,067 - src.utils.logger - INFO - Starting transformation process
+2026-06-23 00:58:20,067 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-23 00:58:20,068 - src.utils.logger - INFO - Raw API record count: 1
+2026-06-23 00:58:20,871 - src.utils.logger - INFO - Final record count: 1
+2026-06-23 00:58:20,872 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-23 00:58:20,979 - src.utils.logger - INFO - dim_date rows: 1
+2026-06-23 00:58:20,980 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-23 00:58:20,980 - src.utils.logger - INFO - fact_weather rows: 1
+2026-06-23 00:58:20,980 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-23 00:58:20,981 - src.utils.logger - INFO - Starting transformation process
+2026-06-23 00:58:20,981 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-23 00:58:20,982 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-23 00:58:21,019 - src.utils.logger - INFO - Final record count: 7
+2026-06-23 00:58:21,020 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-23 00:58:21,023 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-23 00:58:21,024 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-23 00:58:21,024 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-23 00:58:21,024 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-23 00:58:21,025 - src.utils.logger - INFO - Starting transformation process
+2026-06-23 00:58:21,026 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-23 00:58:21,027 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-23 00:58:21,038 - src.utils.logger - INFO - Final record count: 7
+2026-06-23 00:58:21,039 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-23 00:58:21,045 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-23 00:58:21,046 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-23 00:58:21,046 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-23 00:58:21,046 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-23 00:58:21,097 - src.utils.logger - INFO - Generated 8 dim_date rows
+2026-06-23 00:58:21,097 - src.utils.logger - INFO - Generated 1 dim_location rows
+2026-06-23 00:58:21,097 - src.utils.logger - INFO - Generated 15 fact_weather rows
+2026-06-23 00:58:21,098 - src.utils.logger - INFO - Transformation phase completed
+2026-06-23 00:58:21,098 - src.utils.logger - INFO - Starting load phase
+2026-06-23 00:58:21,098 - src.utils.logger - INFO - Starting database load
+2026-06-23 00:58:21,098 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-23 00:58:21,974 - src.utils.logger - INFO - Processed 8 dim_date rows
+2026-06-23 00:58:21,974 - src.utils.logger - INFO - Loading dim_location table
+2026-06-23 00:58:22,342 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-23 00:58:22,342 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-23 00:58:22,375 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-23 00:58:23,750 - src.utils.logger - INFO - Processed 15 fact_weather rows
+2026-06-23 00:58:23,750 - src.utils.logger - INFO - Database load completed successfully
+2026-06-23 00:58:23,751 - src.utils.logger - INFO - Load phase completed
+2026-06-23 00:58:23,751 - src.utils.logger - INFO - Starting staging update phase
+2026-06-23 00:58:23,752 - src.utils.logger - INFO - Marking 3 staging records as processed
+2026-06-23 00:58:23,928 - src.utils.logger - INFO - Staging update phase completed
+2026-06-23 00:58:23,928 - src.utils.logger - INFO - ELT pipeline completed successfully
+2026-06-23 01:04:32,023 - src.utils.logger - INFO - Starting ELT pipeline
+2026-06-23 01:04:32,045 - src.utils.logger - INFO - Starting extraction phase
+2026-06-23 01:04:32,045 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-23 01:04:34,437 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-23 01:04:34,438 - src.utils.logger - INFO - Loading raw payload into staging table
+2026-06-23 01:04:35,465 - src.utils.logger - INFO - Raw payload loaded successfully
+2026-06-23 01:04:35,466 - src.utils.logger - INFO - Extraction phase completed
+2026-06-23 01:04:35,466 - src.utils.logger - INFO - Starting transformation phase
+2026-06-23 01:04:35,467 - src.utils.logger - INFO - Retrieving unprocessed staging records
+2026-06-23 01:04:36,040 - src.utils.logger - INFO - Transforming 1 staging record(s)
+2026-06-23 01:04:36,069 - src.utils.logger - INFO - Starting transformation process
+2026-06-23 01:04:36,069 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-23 01:04:36,069 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-23 01:04:37,038 - src.utils.logger - INFO - Final record count: 7
+2026-06-23 01:04:37,038 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-23 01:04:37,137 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-23 01:04:37,137 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-23 01:04:37,137 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-23 01:04:37,137 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-23 01:04:37,144 - src.utils.logger - INFO - Generated 7 dim_date rows
+2026-06-23 01:04:37,144 - src.utils.logger - INFO - Generated 1 dim_location rows
+2026-06-23 01:04:37,145 - src.utils.logger - INFO - Generated 7 fact_weather rows
+2026-06-23 01:04:37,145 - src.utils.logger - INFO - Transformation phase completed
+2026-06-23 01:04:37,145 - src.utils.logger - INFO - Starting load phase
+2026-06-23 01:04:37,145 - src.utils.logger - INFO - Starting database load
+2026-06-23 01:04:37,146 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-23 01:04:37,173 - src.utils.logger - INFO - Processed 7 dim_date rows
+2026-06-23 01:04:37,173 - src.utils.logger - INFO - Loading dim_location table
+2026-06-23 01:04:37,323 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-23 01:04:37,324 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-23 01:04:37,359 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-23 01:04:37,427 - src.utils.logger - INFO - Processed 7 fact_weather rows
+2026-06-23 01:04:37,427 - src.utils.logger - INFO - Database load completed successfully
+2026-06-23 01:04:37,427 - src.utils.logger - INFO - Load phase completed
+2026-06-23 01:04:37,428 - src.utils.logger - INFO - Starting staging update phase
+2026-06-23 01:04:37,428 - src.utils.logger - INFO - Marking 1 staging records as processed
+2026-06-23 01:04:37,518 - src.utils.logger - INFO - Staging update phase completed
+2026-06-23 01:04:37,518 - src.utils.logger - INFO - ELT pipeline completed successfully
+2026-06-23 01:14:00,077 - src.utils.logger - INFO - Starting ELT pipeline
+2026-06-23 01:14:00,078 - src.utils.logger - INFO - Starting extraction phase
+2026-06-23 01:14:00,079 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-23 01:14:05,818 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-23 01:14:05,820 - src.utils.logger - INFO - Loading raw payload into staging table
+2026-06-23 01:14:07,564 - src.utils.logger - INFO - Raw payload loaded successfully
+2026-06-23 01:14:07,565 - src.utils.logger - INFO - Extraction phase completed
+2026-06-23 01:14:07,565 - src.utils.logger - INFO - Starting transformation phase
+2026-06-23 01:14:07,565 - src.utils.logger - INFO - Retrieving unprocessed staging records
+2026-06-23 01:14:10,207 - src.utils.logger - INFO - Transforming 2 staging record(s)
+2026-06-23 01:14:10,244 - src.utils.logger - INFO - Starting transformation process
+2026-06-23 01:14:10,244 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-23 01:14:10,245 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-23 01:14:11,689 - src.utils.logger - INFO - Final record count: 7
+2026-06-23 01:14:11,689 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-23 01:14:11,813 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-23 01:14:11,813 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-23 01:14:11,813 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-23 01:14:11,813 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-23 01:14:11,814 - src.utils.logger - INFO - Starting transformation process
+2026-06-23 01:14:11,814 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-23 01:14:11,814 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-23 01:14:11,826 - src.utils.logger - INFO - Final record count: 7
+2026-06-23 01:14:11,826 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-23 01:14:11,833 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-23 01:14:11,833 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-23 01:14:11,833 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-23 01:14:11,833 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-23 01:14:12,395 - src.utils.logger - INFO - Generated 7 dim_date rows
+2026-06-23 01:14:12,395 - src.utils.logger - INFO - Generated 1 dim_location rows
+2026-06-23 01:14:12,395 - src.utils.logger - INFO - Generated 14 fact_weather rows
+2026-06-23 01:14:12,396 - src.utils.logger - INFO - Transformation phase completed
+2026-06-23 01:14:12,396 - src.utils.logger - INFO - Starting load phase
+2026-06-23 01:14:12,396 - src.utils.logger - INFO - Starting database load
+2026-06-23 01:14:12,396 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-23 01:14:12,629 - src.utils.logger - INFO - Processed 7 dim_date rows
+2026-06-23 01:14:12,629 - src.utils.logger - INFO - Loading dim_location table
+2026-06-23 01:14:13,160 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-23 01:14:13,160 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-23 01:14:13,254 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-23 01:14:15,123 - src.utils.logger - INFO - Processed 14 fact_weather rows
+2026-06-23 01:14:15,124 - src.utils.logger - INFO - Database load completed successfully
+2026-06-23 01:14:15,124 - src.utils.logger - INFO - Load phase completed
+2026-06-23 01:14:15,124 - src.utils.logger - INFO - Starting staging update phase
+2026-06-23 01:14:15,125 - src.utils.logger - INFO - Marking 2 staging records as processed
+2026-06-23 01:14:16,084 - src.utils.logger - INFO - Staging update phase completed
+2026-06-23 01:14:16,084 - src.utils.logger - INFO - ELT pipeline completed successfully
+2026-06-24 03:59:32,443 - src.utils.logger - INFO - Starting ETL pipeline
+2026-06-24 03:59:32,462 - src.utils.logger - INFO - Starting extraction phase
+2026-06-24 03:59:32,463 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-24 03:59:36,129 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-24 03:59:36,130 - src.utils.logger - INFO - Extraction phase completed
+2026-06-24 03:59:36,130 - src.utils.logger - INFO - Starting transformation phase
+2026-06-24 03:59:36,130 - src.utils.logger - INFO - Starting transformation process
+2026-06-24 03:59:36,130 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-24 03:59:36,170 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-24 03:59:36,325 - src.utils.logger - INFO - Final record count: 7
+2026-06-24 03:59:36,326 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-24 03:59:36,387 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-24 03:59:36,387 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-24 03:59:36,387 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-24 03:59:36,387 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-24 03:59:36,388 - src.utils.logger - INFO - Transformation phase completed
+2026-06-24 03:59:36,388 - src.utils.logger - INFO - Starting load phase
+2026-06-24 03:59:36,388 - src.utils.logger - INFO - Starting database load
+2026-06-24 03:59:36,388 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-24 03:59:37,856 - src.utils.logger - INFO - Processed 7 dim_date rows
+2026-06-24 03:59:37,856 - src.utils.logger - INFO - Loading dim_location table
+2026-06-24 03:59:37,980 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-24 03:59:37,981 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-24 03:59:37,992 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-24 03:59:38,221 - src.utils.logger - INFO - Processed 7 fact_weather rows
+2026-06-24 03:59:38,222 - src.utils.logger - INFO - Database load completed successfully
+2026-06-24 03:59:38,222 - src.utils.logger - INFO - Load phase completed
+2026-06-24 03:59:38,222 - src.utils.logger - INFO - ETL pipeline completed successfully
+2026-06-24 03:59:58,729 - src.utils.logger - INFO - Starting ELT pipeline
+2026-06-24 03:59:58,729 - src.utils.logger - INFO - Starting extraction phase
+2026-06-24 03:59:58,730 - src.utils.logger - INFO - Starting weather data extraction
+2026-06-24 04:00:03,832 - src.utils.logger - INFO - Weather data extracted successfully
+2026-06-24 04:00:03,836 - src.utils.logger - INFO - Loading raw payload into staging table
+2026-06-24 04:00:03,940 - src.utils.logger - INFO - Raw payload loaded successfully
+2026-06-24 04:00:03,940 - src.utils.logger - INFO - Extraction phase completed
+2026-06-24 04:00:03,941 - src.utils.logger - INFO - Starting transformation phase
+2026-06-24 04:00:03,941 - src.utils.logger - INFO - Retrieving unprocessed staging records
+2026-06-24 04:00:04,262 - src.utils.logger - INFO - Transforming 2 staging record(s)
+2026-06-24 04:00:04,263 - src.utils.logger - INFO - Starting transformation process
+2026-06-24 04:00:04,263 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-24 04:00:04,263 - src.utils.logger - INFO - Raw API record count: 1
+2026-06-24 04:00:04,278 - src.utils.logger - INFO - Final record count: 1
+2026-06-24 04:00:04,278 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-24 04:00:04,286 - src.utils.logger - INFO - dim_date rows: 1
+2026-06-24 04:00:04,286 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-24 04:00:04,286 - src.utils.logger - INFO - fact_weather rows: 1
+2026-06-24 04:00:04,286 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-24 04:00:04,287 - src.utils.logger - INFO - Starting transformation process
+2026-06-24 04:00:04,287 - src.utils.logger - INFO - Creating DataFrame from API response
+2026-06-24 04:00:04,287 - src.utils.logger - INFO - Raw API record count: 7
+2026-06-24 04:00:04,301 - src.utils.logger - INFO - Final record count: 7
+2026-06-24 04:00:04,301 - src.utils.logger - INFO - Preparing fact and dimension tables
+2026-06-24 04:00:04,305 - src.utils.logger - INFO - dim_date rows: 7
+2026-06-24 04:00:04,306 - src.utils.logger - INFO - dim_location rows: 1
+2026-06-24 04:00:04,306 - src.utils.logger - INFO - fact_weather rows: 7
+2026-06-24 04:00:04,306 - src.utils.logger - INFO - Transformation completed successfully
+2026-06-24 04:00:04,335 - src.utils.logger - INFO - Generated 8 dim_date rows
+2026-06-24 04:00:04,336 - src.utils.logger - INFO - Generated 1 dim_location rows
+2026-06-24 04:00:04,336 - src.utils.logger - INFO - Generated 8 fact_weather rows
+2026-06-24 04:00:04,336 - src.utils.logger - INFO - Transformation phase completed
+2026-06-24 04:00:04,336 - src.utils.logger - INFO - Starting load phase
+2026-06-24 04:00:04,336 - src.utils.logger - INFO - Starting database load
+2026-06-24 04:00:04,336 - src.utils.logger - INFO - Loading dim_date table...
+2026-06-24 04:00:04,358 - src.utils.logger - INFO - Processed 8 dim_date rows
+2026-06-24 04:00:04,358 - src.utils.logger - INFO - Loading dim_location table
+2026-06-24 04:00:04,361 - src.utils.logger - INFO - Processed 1 dim_location rows
+2026-06-24 04:00:04,362 - src.utils.logger - INFO - Resolving location surrogate keys
+2026-06-24 04:00:04,367 - src.utils.logger - INFO - Loading fact_weather table
+2026-06-24 04:00:04,409 - src.utils.logger - INFO - Processed 8 fact_weather rows
+2026-06-24 04:00:04,409 - src.utils.logger - INFO - Database load completed successfully
+2026-06-24 04:00:04,409 - src.utils.logger - INFO - Load phase completed
+2026-06-24 04:00:04,410 - src.utils.logger - INFO - Starting staging update phase
+2026-06-24 04:00:04,410 - src.utils.logger - INFO - Marking 2 staging records as processed
+2026-06-24 04:00:04,500 - src.utils.logger - INFO - Staging records marked as processed successfully
+2026-06-24 04:00:04,501 - src.utils.logger - INFO - Staging update phase completed
+2026-06-24 04:00:04,501 - src.utils.logger - INFO - ELT pipeline completed successfully
