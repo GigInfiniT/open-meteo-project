@@ -473,11 +473,9 @@ The project includes Airflow DAGs for **both ETL and ELT pipelines**.
 
 ## Important note about Airflow deployment
 
-For execution in the local Airflow environment, the DAG files were also placed in the Airflow DAGs directory:
+Apache Airflow was configured in a separate Airflow environment. The DAG files used by Airflow are included in the `dags/` directory of this repository.
 
-```bash
-/home/ugo/airflow/dags/
-```
+For execution in the local Airflow environment, the DAG files were copied into the Airflow DAGs folder configured on the host machine.
 
 The copies stored in this project repository are included for:
 
